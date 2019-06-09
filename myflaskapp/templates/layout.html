@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My flask app</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="background-color:#454655">
+		{% include 'includes/_navbar.html' %}
+		<div class="container">
+		{% include 'includes/_messages.html' %}
+		<center>
+		<img src="https://i.imgur.com/RpdclFT.png" title="source: imgur.com" width="1100" />
+		</center>
+		{% block body %}{% endblock %}
+		</div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
